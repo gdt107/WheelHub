@@ -1,0 +1,540 @@
+body{
+    margin: auto;
+    background-color: black;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.navbar{
+    position: sticky;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    display: flex;
+    border-bottom: 0.25vh solid orange;
+}
+
+.nav-logo{
+    height: 9vh;
+    display: flex;
+}
+
+.nav-logo div{
+    margin: auto;
+    margin-left: 1%;
+    font-size: 5vh;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: orange;
+    border-radius: 15%;
+}
+
+.nav-logo img{
+    margin: auto;
+    height: 90%;
+    border-radius: 50%;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.nav-links a{
+    text-decoration: none;
+    margin-right: 1.5vh;
+    font-size: 3vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.nav-links a:hover{
+    transition: color 0.3s ease-in-out; 
+    color: orange;
+}
+
+.dropdown img{
+    display: none;
+}
+
+@media(max-width: 750px){
+    .navbar{
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+    }
+
+    .nav-links{
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+        margin-left: 0;
+        margin-bottom: 1vh;
+        /* display: none; */
+    }
+
+    .dropdown{
+        width: 100%;
+        margin: auto;
+        /* text-align: center; */
+    }
+    .dropdown img{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 10%;
+        margin: auto;
+    }
+
+    .nav-logo div{
+        margin-left: 0;
+    }
+
+}
+
+@media(max-width: 750px){
+    .nav-links a{
+        display: none;
+    }
+
+    .dropdown:hover ~.nav-links, .nav-links, .dropdown-content, .dropdown-content{
+        display: contents;
+        width: 100%;
+    }
+}
+
+/* @media(max-width: 750px){
+    .dropdown{
+        display: ;
+    }
+} */
+
+.dropdown{
+    /* display: none; */
+    background-color: orange;
+    height: 9vh;
+    margin-right: 1vw;
+    border-radius: 15%;
+}
+
+.dropdown a{
+    display: block;
+}
+
+.dropdown img{
+    height: 9vh;
+    cursor: pointer;
+}
+
+.dropdown .dropdown-content{
+    position: absolute;
+    display: none;
+}
+
+.dropdown-content{
+    border: 0.2vw solid orange;
+    background-color: hwb(192 8% 5%);
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+
+
+
+.content{
+    color: white;
+    margin-top: 5vw;
+    display: flex;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#title{
+    font-size: 8vh;
+    color: orange;
+}
+
+.content-description{
+    width: 55%;
+    margin-left: 2.5vw;
+}
+
+.content-description p{
+    font-size: 3vh;
+}
+
+.slider-container{
+    margin-top: 15vh;
+    width: 35%;
+    margin-right: 2.5vw;
+    margin-left: 2.5vw;
+    overflow: hidden;
+}
+
+.image-slider{
+    width: 175%;
+    display: flex;
+}
+
+.image-slider img{
+    width: 55%;
+    border: solid 0.1vw orange;
+}
+
+.arrow-container{
+    display: flex;
+    justify-content: space-around;
+    font-size: 2vw;
+    color: orange;
+}
+
+.arrow-container i{
+    cursor: pointer;
+}
+
+.arrow-container i:hover{
+    color: whitesmoke;
+    transition: 1s ease-in-out;
+}
+
+button {
+    padding: 1.2vh 3.75vh ;
+    border: 1vh solid transparent;
+    border-radius: 999px;
+    margin-block-start: 1.481vh;
+    background-color: orange;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 2vh;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+  }
+
+  button:hover {
+    border: 3px solid orange;
+    background-color: transparent;
+    color: orange;
+  }
+
+  aside {
+    position: fixed;
+    inset-block: 0;
+    inset-inline-end: 0;
+  }
+
+  aside .social-media {
+    height: 100%;
+    display: flex;
+  }
+
+  aside .social-media ul {
+    padding: 2.25vh 1.5vh;
+    border-top-left-radius: 1.11vh;
+    border-bottom-left-radius: 1.12vh;
+    margin: auto;
+    background-color: orange;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3vh;
+  }
+
+  aside .social-media li {
+    list-style-type: none;
+  }
+
+  aside .social-media li a {
+    text-decoration: none;
+    font-size: 3vh;
+    color: black;
+    transition: all 0.1s ease-in-out;
+  }
+
+  .social-media ul li a i:hover{
+    color: whitesmoke;
+    transition: 0.5s ease-in-out;
+  }
+
+
+.ourstory{
+    margin: auto;
+    margin-left: 1vw;
+    margin-top: 1vw;
+    display: flex;
+    width: 100%;
+}
+
+.ourstory-content{
+    width: 55%;
+    border: 0.2vw solid orange;
+    padding: 1vw 1vw 1vw 1vw;
+    border-radius: 15%;
+}
+
+.ourstory-content h1{
+    font-size: 2.5vw;
+    color: white;
+}
+
+.ourstory p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+}
+
+.ourstory-image{
+    width: 35%;
+    margin: auto;
+    border: 0.2vw solid orange;
+    border-radius: 15%;
+    margin-left: 1.5vw;
+}
+
+.ourstory-image img{
+    width: 100%;
+    border-radius: 15%;
+}
+
+.ourstory-image img:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out; 
+}
+
+.mission-vision{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    margin-left: 1vw;
+    text-align: center;
+}
+
+.mission-vision h1{
+    font-size: 2.5vw;
+}
+
+.mission-vision-container{
+    display: flex;
+    width: 85%;
+    margin: auto;
+}
+
+.mission-vision-container h2{
+    font-size: 2vw;
+}
+
+.mission-vision-container p{
+    font-size: 1.2vw;
+}
+
+.mission{
+    margin-right: 1vw;
+}
+
+.ouractivities{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.ouractivities h1{
+    font-size: 2.5vw;
+}
+
+.activity-container{
+    width: 85%;
+    margin: auto;
+}
+
+.firstactivity{
+    display: flex;
+    padding: 1vw 1vw 1vw 1vw;
+}
+
+.firstactivity img{
+    width: 45%;
+    height: 45vh;
+    border: 0.2vw solid orange;
+}
+
+.firstactivity img:first-child{
+    margin-right: 10vw;
+}
+
+.secondactivity img{
+    width: 45%;
+    height: 45vh;
+    border: 0.2vw solid orange;
+}
+
+.promotion-title{
+    border-bottom: 0.1vw solid orange;
+}
+
+.promotion-title h1{
+    text-align: center;
+    color: white;
+    font-size: 3vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.promotion-title h2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.car-discount-container{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 1vw;
+    display: flex;
+    margin-bottom: 0.1vw;
+    margin-left: 0.5vw;
+    border-bottom: 0.1vw solid orange;
+    width: 100%;
+}
+
+.car-title{
+    width: 45%;
+    padding: 1vw;
+}
+
+.car-title h1{
+    font-size: 3vw;
+}
+
+.car-title img{
+    width: 75%;
+    border: 0.1vw solid orange;
+    border-radius: 10%;
+}
+
+.car-content{
+    border-left: 0.1vw solid orange;
+    padding: 0.5vw;
+    font-size: 1vw;
+    padding-left: 1vw;
+}
+
+.car-content h1{
+    font-size: 3vw;
+}
+
+.car-content h2{
+    font-size: 2vw;
+}
+
+/*  */
+
+body{
+    background-color: black;
+    margin: auto;
+    color: white;
+}
+
+.register-container{
+    width: 550px;
+    height: 720px;
+    border: 1px solid orange;
+    margin: auto;
+    margin-top: 75px;
+    border-radius: 10%;
+}
+
+.register-title{
+    margin-top: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    color: orange;
+}
+
+.form-component{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 10px;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.form-component label{
+    font-size: 20px;
+}
+
+.form-component input{
+    width: 300px;
+    height: 40px;
+    border-radius: 1rem;
+    border: 2px solid orange;
+}
+
+.form-component div{
+    display: flex;
+}
+
+.form-component div input{
+    width: 40px;
+    height: 15px;
+}
+
+.reset-submit{
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.reset-submit button{
+    width: 200px;
+    height: 45px;
+    border-radius: 1rem;
+    color: orange;
+    border: 3px solid orange;
+    background-color: black;
+    cursor: pointer;
+}
+
+.reset-submit button:hover{
+    width: 200px;
+    height: 45px;
+    border-radius: 1rem;
+    color: black;
+    border: 3px solid orange;
+    background-color: orange;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.register-outer-container{
+    display: flex;
+}
+
+.join-us{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.join-us img{
+    width: 450px;
+    height: 300px;
+    margin-right: 200px;
+    border: 5px solid orange;
+    border-radius: 10%;
+}
+
+.join-us img:hover{
+    border: 6px solid white;
+    transition: 0.2s ease-in-out;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Register</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="nav-logo">
+            <a href="home.html"><img src="./Assets/Gemini_Generated_Image_xi5xgexi5xgexi5x.jpg" alt=""></a>
+           <div><a href="" style="text-decoration: none; color: black;">WheelHub</a></div>
+        </div>
+        <div class="nav-links">
+            <div class="dropdown">
+                <img src="./Assets/ui/down_down_arrow.png" alt="">
+                <div class="dropdown-content">
+                    <a href="home.html">Home</a>
+                    <a href="promotion.html">Promotion</a>
+                    <a href="cars.html">All Cars</a>
+                    <a href="aboutus.html">About Us</a>
+                    <a href="register.html" style="color: orangered;">Register</a>
+                </div>
+            </div>
+            <a href="home.html">Home</a>
+            <a href="promotion.html">Promotion</a>
+            <a href="cars.html">All Cars</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="register.html" style="color: orangered;">Register</a>
+        </div>
+    </div>
+
+    <div class="register-outer-container">
+        <div class="register-container">
+            <div class="register-title"> Register </div>
+            <form action="home.html" onsubmit="return validateForm()">
+             <div class="form-component" >
+                 <label>Username</label>
+                 <input type="text" placeholder="Username" name="username" id="username">
+             </div>
+             <div class="form-component">
+                 <label>Email</label>
+                 <input type="text" placeholder="Email" name="email" id="email">
+             </div>
+             <div class="form-component">
+                 <label>Password</label>
+                 <input type="password" placeholder="Password" name="password" id="password">
+             </div>
+             <div class="form-component">
+                 <label>Confirm Password</label>
+                 <input type="password" placeholder="Re-enter Password" name="repassword" id="repassword">
+             </div>
+             <div class="form-component">
+                 <label>Gender</label>
+                 <div>
+                     <input type="radio" name="gender" id="male"> Male
+                     <input type="radio" name="gender" id="female"> Female
+                 </div>
+             </div>
+             <div class="form-component">
+                 <label>Date of Birth</label>
+                 <input type="date" name="dob" id="dob">
+             </div>
+             <div class="form-component">
+                 <br>
+                 <div>
+                     <input type="checkbox" name="tnc" id="tnc">
+                     <label for="">I Agree to terms and conditions</label>
+                 </div>
+             </div>
+             <div class="form-component">
+                 <div class="reset-submit">
+                     <button type="reset">Reset</button>
+                     <button id="submit-btn" type="submit">Submit</button>
+                 </div>
+             </div>
+            </form>
+         </div>
+         <div class="join-us">
+            <img src="./Assets/joinUsSectionBaner.jpeg" alt="">
+         </div>
+    </div>
+
+    
+    
+
+</body>
+</html>
